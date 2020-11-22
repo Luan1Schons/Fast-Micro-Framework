@@ -75,6 +75,35 @@ class Home  extends BaseController
  }
  ```
  
+ # Loading Views
+  Frist Create your view on path: app/views/ with extension .twig or another configured on .env EXT_VIEWS
+ ```
+<?php
+
+/* 
+* Web Controller
+*/
+
+namespace App\Controllers;
+
+use App\Database\Models\Users;
+
+class Home  extends BaseController
+{
+
+    public function index()
+    {
+         $data = [
+            "router" => $response,
+            "page" => ['title' => 'Home', 'description' => "Página Home."]
+        ];
+
+        // your view archive with no extension
+        return $this->setView('home', $data);
+    }
+ }
+ ```
+ 
  # Model Structure
   Create Your controller on path: app/models/database/
  ```
