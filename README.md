@@ -2,6 +2,11 @@
 A complete framework for small and medium applications
 I am currently testing the framework, do not recommend for use in production.
 
+### Technologies
+
+* PHP 7.2
+* TWIG
+
 # Router
 Small, simple and uncomplicated. The router is a PHP route components with abstraction for MVC. Prepared with RESTfull verbs (GET, POST, PUT, PATCH and DELETE), works on its own layer in isolation and can be integrated without secrets to your application.
 
@@ -49,7 +54,7 @@ $this->{Your Model}->delete(['fields' => ['name' => 'Luan'],
 
 # Controller Structure
   Create Your controller on path: app/controllers/
-  
+ ```
 <?php
 
 /* 
@@ -68,6 +73,7 @@ class Home  extends BaseController
          echo 'Home';
     }
  }
+ ```
 
 
 
