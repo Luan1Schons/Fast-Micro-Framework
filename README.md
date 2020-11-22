@@ -52,6 +52,27 @@ $this->{Your Model}->delete(['fields' => ['name' => 'Luan'],
                             'where' => ['email' => 'luanschons2000@gmail.com']
                            ]);
 
+# Creating .env file
+Firs create a .ev on root paste
+ ```
+BASE_URL="http://framework.test"
+DIR_VIEWS="/app/views/"
+EXT_VIEWS=".twig"
+ENVIRONMENT="DEVELOPMENT"
+
+DB_NAME=""
+DB_USER=""
+DB_PASSWORD=""
+DB_HOST="localhost"
+DB_DRIVER="mysql"
+
+MAIL_HOST="smtp.gmail.com"
+MAIL_USERNAME="username@email.com"
+MAIL_PASSWORD="password"
+MAIL_PORT="587"
+ ```
+
+
 # Routers Tutorial
 Creating Routers
 First open archive core/Routers.php
