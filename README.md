@@ -52,7 +52,66 @@ $this->{Your Model}->delete(['fields' => ['name' => 'Luan'],
                             'where' => ['email' => 'luanschons2000@gmail.com']
                            ]);
 
-# Controller Structure
+# Routers Tutorial
+Creating Routers
+First open archive core/Routers.php
+ ```
+<?php
+
+use CoffeeCode\Router\Router;
+
+$router = new Router($_ENV['BASE_URL']);
+
+/**
+ * routes
+ * The controller must be in the namespace Test\Controller
+ */
+ 
+$router->namespace("Test")->group("name");
+
+$router->get("/", "Name:home", "name.home");
+$router->get("/hello", "Name:hello", "name.hello");
+$router->get("/redirect", "Name:redirect", "name.redirect");
+
+/**
+ * This method executes the routes
+ */
+$router->dispatch();
+
+/*
+ * Redirect all errors
+ */
+if ($router->error()) {
+    $router->redirect("name.hello");
+}
+ ```
+ 
+### Named Controller Example
+ ```
+ <?php
+
+/* 
+* Web Controller
+*/
+
+namespace App\Controllers;
+
+use App\Database\Models\Users;
+
+class Home  extends BaseController
+{
+
+    public function index($response)
+    {
+         echo "<h1>Home</h1>";
+        echo "<p>", $response->route("name.home"), "</p>";
+        echo "<p>", $response->route("name.hello"), "</p>";
+        echo "<p>", $response->route("name.redirect"), "</p>";
+    }
+ }
+ ```
+# MVC Tutorial
+### Controller Structure
   Create Your controller on path: app/controllers/
  ```
 <?php
@@ -75,7 +134,7 @@ class Home  extends BaseController
  }
  ```
  
- # Loading Views
+ ### Loading Views
   Frist Create your view on path: app/views/ with extension .twig or another configured on .env EXT_VIEWS
  ```
 <?php
@@ -104,7 +163,7 @@ class Home  extends BaseController
  }
  ```
  
- # Model Structure
+ ### Model Structure
   Create Your controller on path: app/models/database/
  ```
 <?php
