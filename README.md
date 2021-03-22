@@ -49,7 +49,7 @@ Install any component easily with composer.
 # Complete Crud Implemented
 Enter, Delete, Update and easily query data using the methods:
 
-First create a model on *Fast-Micro-Framework/app/database/models/*
+First create a model on *Fast-Micro-Framework/app/database/models/YourModel.php*
 
 Default Structure:
 
