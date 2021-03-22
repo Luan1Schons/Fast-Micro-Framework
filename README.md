@@ -38,7 +38,39 @@ Install any component easily with composer.
 # Complete Crud Implemented
 Enter, Delete, Update and easily query data using the methods:
 
+First create a model on *Fast-Micro-Framework/app/database/models/*
+
+Default Structure:
+
+```php
+<?php
+
+namespace App\Database\Models;
+
+/*
+** Model Users
+*/
+class Users extends BaseModels
+{
+    protected $table = 'user';
+
+    public function listUsers()
+    {
+        $users = $this->find();
+        return $users;
+    }
+
+    public function createUser($data)
+    {
+        $users = $this->create($data);
+        return $users;
+    }
+}
+
+```
+
 Find one or all registers
+
 ```php
 $this->{Your Model}->find(FindAll = true or Find=false?);
 ```
