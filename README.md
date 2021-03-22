@@ -292,7 +292,7 @@ class Users extends BaseModels
 
     public function updateUser()
     {
-      $users = $this->update(['fields) => [], 'where' => []]);
+      $users = $this->update(['fields' => [], 'where' => []]);
       return $users;
     }
     
