@@ -113,7 +113,7 @@ if ($router->error()) {
  ```
  
 ### Named Controller Example
- ```
+ ```php
  <?php
 
 /* 
@@ -162,7 +162,7 @@ class Home  extends BaseController
  
  ### Loading Views
   Frist Create your view on path: app/views/ with extension .twig or another configured on .env EXT_VIEWS
- ```
+ ```php
 <?php
 
 /* 
