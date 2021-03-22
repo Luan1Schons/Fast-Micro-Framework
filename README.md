@@ -105,6 +105,18 @@ $this->find(FindAll = true or Find=false?);
 $this->{Your Model}->find(FindAll = true or Find=false?);
 ```
 
+
+Find by field & value
+
+```php
+//In model: 
+$this->findBy($field, $value, $fetchAll = true)
+```
+```php
+//On Controller:
+$this->{Your Model}->findBy($field, $value, $fetchAll = true)
+```
+
 Insert data on table
 
 ```php
