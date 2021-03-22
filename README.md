@@ -1,6 +1,5 @@
 # LSFramework
-A complete framework for small and medium applications
-I am currently testing the framework, do not recommend for use in production.
+A complete and beatiful framework for small and medium applications
 
 ### Technologies
 
