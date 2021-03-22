@@ -10,6 +10,14 @@ I am currently testing the framework, do not recommend for use in production.
 # Router
 Small, simple and uncomplicated. The router is a PHP route components with abstraction for MVC. Prepared with RESTfull verbs (GET, POST, PUT, PATCH and DELETE), works on its own layer in isolation and can be integrated without secrets to your application.
 
+# Highlights
+Router class with all RESTful verbs (Classe router com todos os verbos RESTful)
+Optimized dispatch with total decision control (Despacho otimizado com controle total de decisões)
+Requesting Spoofing for Local Verbalization (Falsificador (Spoofing) de requisição para verbalização local)
+It's very simple to create routes for your application or API (É muito simples criar rotas para sua aplicação ou API)
+Trigger and data carrier for the controller (Gatilho e transportador de dados para o controlador)
+Composer ready and PSR-2 compliant (Pronto para o composer e compatível com PSR-2)
+
 # Included
 Models, Views, Controllers
 Organize your MVC tiered application, making it easy to team & maintain future.
