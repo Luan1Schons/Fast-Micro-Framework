@@ -152,6 +152,7 @@ $router = new Router($_ENV['BASE_URL']);
  * The controller must be in the namespace Test\Controller
  */
  
+// Namespace of you controller
 $router->namespace("Test")->group("name");
 
 $router->get("/", "Name:home", "name.home");
@@ -181,17 +182,14 @@ if ($router->error()) {
 
 namespace App\Controllers;
 
+// If you use one model call using:
 use App\Database\Models\Users;
 
-class Home  extends BaseController
+class Home extends BaseController
 {
-
     public function index($response)
     {
-         echo "<h1>Home</h1>";
-        echo "<p>", $response->route("name.home"), "</p>";
-        echo "<p>", $response->route("name.hello"), "</p>";
-        echo "<p>", $response->route("name.redirect"), "</p>";
+        echo "<h1>Home</h1>";
     }
  }
  ```
@@ -207,11 +205,8 @@ class Home  extends BaseController
 
 namespace App\Controllers;
 
-use App\Database\Models\Users;
-
-class Home  extends BaseController
+class Home extends BaseController
 {
-
     public function index()
     {
          echo 'Home';
@@ -220,7 +215,7 @@ class Home  extends BaseController
  ```
  
  ### Loading Views
-  Frist Create your view on path: app/views/ with extension .twig or another configured on .env EXT_VIEWS
+  Frist Create your view on path: app/views/ with extension .twig or another configured on .env "EXT_VIEWS"
  ```php
 <?php
 
@@ -230,11 +225,8 @@ class Home  extends BaseController
 
 namespace App\Controllers;
 
-use App\Database\Models\Users;
-
-class Home  extends BaseController
+class Home extends BaseController
 {
-
     public function index()
     {
          $data = [
@@ -256,13 +248,12 @@ class Home  extends BaseController
 namespace App\Database\Models;
 
 /*
-
 ** Model Users
-
 */
 
 class Users extends BaseModels
 {
+    // Name of you table in database
     protected $table = 'user';
 
     public function listUsers()
