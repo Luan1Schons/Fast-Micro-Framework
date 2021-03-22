@@ -94,11 +94,11 @@ $this->{Your Model}->create(['field1' => 'data1', 'field2' => 'data2']);
 ```
 Delete data on table
 ```php
-In model: 
+//In model: 
 $this->delete('id', 1);
 ```
 ```php
-On Controller:
+//On Controller:
 $this->{Your Model}->delete('id', 1);
 ```
 Update data on table
