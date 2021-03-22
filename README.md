@@ -7,9 +7,20 @@ A complete and beatiful framework for small and medium applications
 * TWIG
 
 # Installing
+
+Clone te project on your root folder
 ```sh
 git clone https://github.com/Luan1Schons/Fast-Micro-Framework.git ./
 ```
+
+Install composer if you have not and execute:
+
+```sh
+composer dump-autoload -o
+```
+
+🌟 Yeah! You framework is installed and working!
+
 # Router
 Small, simple and uncomplicated. The router is a PHP route components with abstraction for MVC. Prepared with RESTfull verbs (GET, POST, PUT, PATCH and DELETE), works on its own layer in isolation and can be integrated without secrets to your application.
 
