@@ -72,22 +72,24 @@ class Users extends BaseModels
 Find one or all registers
 
 
-In model: 
+
 ```php
+//In model: 
 $this->find(FindAll = true or Find=false?);
 ```
-On Controller:
 ```php
+//On Controller:
 $this->{Your Model}->find(FindAll = true or Find=false?);
 ```
 
 Insert data on table
-In model: 
+
 ```php
+//In model: 
 $this->create(['field1' => 'data1', 'field2' => 'data2']);
 ```
-On Controller:
 ```php
+//On Controller:
 $this->{Your Model}->create(['field1' => 'data1', 'field2' => 'data2']);
 ```
 Delete data on table
@@ -100,15 +102,16 @@ On Controller:
 $this->{Your Model}->delete('id', 1);
 ```
 Update data on table
-
-In model: 
+ 
 ```php
+//In model:
 $this->delete(['fields' => ['name' => 'Luan'],
                             'where' => ['email' => 'luanschons2000@gmail.com']
                            ]);
 ```
-On Controller:
+
 ```php
+//On Controller:
 $this->{Your Model}->delete(['fields' => ['name' => 'Luan'],
                             'where' => ['email' => 'luanschons2000@gmail.com']
                            ]);
