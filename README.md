@@ -39,7 +39,9 @@ Install any component easily with composer.
 Enter, Delete, Update and easily query data using the methods:
 
 Find one or all registers
+```php
 $this->{Your Model}->find(FindAll = true or Find=false?);
+```
 
 Insert data on table
 $this->{Your Model}->create(['field1' => 'data1', 'field2' => 'data2']);
