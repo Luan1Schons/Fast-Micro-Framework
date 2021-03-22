@@ -5,6 +5,7 @@ A complete and beatiful framework for small and medium applications
 
 * PHP 7.2
 * TWIG
+* Make using composer components | Compatible with composer components
 
 # Installing
 
