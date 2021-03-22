@@ -44,19 +44,22 @@ $this->{Your Model}->find(FindAll = true or Find=false?);
 ```
 
 Insert data on table
+```php
 $this->{Your Model}->create(['field1' => 'data1', 'field2' => 'data2']);
-
+```
 Delete data on table
+```php
 $this->{Your Model}->delete('id', 1);
-
+```
 Update data on table
+```php
 $this->{Your Model}->delete(['fields' => ['name' => 'Luan'],
                             'where' => ['email' => 'luanschons2000@gmail.com']
                            ]);
-
+```
 # Creating .env file
 Firs create a .ev on root paste
- ```
+```php
 BASE_URL="http://framework.test"
 DIR_VIEWS="/app/views/"
 EXT_VIEWS=".twig"
@@ -78,7 +81,7 @@ MAIL_PORT="587"
 # Routers Tutorial
 Creating Routers
 First open archive core/Routers.php
- ```
+ ```php
 <?php
 
 use CoffeeCode\Router\Router;
@@ -136,7 +139,7 @@ class Home  extends BaseController
 # MVC Tutorial
 ### Controller Structure
   Create Your controller on path: app/controllers/
- ```
+ ```php
 <?php
 
 /* 
@@ -188,7 +191,7 @@ class Home  extends BaseController
  
  ### Model Structure
   Create Your controller on path: app/models/database/
- ```
+ ```php
 <?php
 
 namespace App\Database\Models;
