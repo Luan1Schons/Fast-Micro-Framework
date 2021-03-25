@@ -68,27 +68,31 @@ Default Structure:
 ```php
 <?php
 
-namespace App\Database\Models;
-
-/*
-** Model Users
+/* 
+* Web Controller
 */
-class Users extends BaseModels
+
+namespace App\Controllers;
+// If you use one model call using:
+
+use App\Database\Models\Users;
+
+class Web  extends BaseController
 {
-    protected $table = 'user';
 
-    public function listUsers()
+
+    protected $user;
+    public function __construct()
     {
-        $users = $this->find();
-        return $users;
+        $user = new Users;
+        $this->user = $user;
     }
 
-    public function createUser($data)
+    public function home($response)
     {
-        $users = $this->create($data);
-        return $users;
+        print_r($this->user->listUsers());
     }
-}
+
 
 ```
 
