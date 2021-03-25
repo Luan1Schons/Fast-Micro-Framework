@@ -1,4 +1,4 @@
-# LSFramework
+# Fast-Micro-Framework LS
 A complete and beatiful framework for small and medium applications
 
 ### Technologies
