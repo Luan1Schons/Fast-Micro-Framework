@@ -67,20 +67,16 @@ Default Structure:
 
 ```php
 <?php
-
 /* 
 * Web Controller
 */
 
 namespace App\Controllers;
-// If you use one model call using:
 
 use App\Database\Models\Users;
 
 class Web  extends BaseController
 {
-
-
     protected $user;
     public function __construct()
     {
@@ -88,12 +84,10 @@ class Web  extends BaseController
         $this->user = $user;
     }
 
-    public function home($response)
+    public function list($response)
     {
-        print_r($this->user->listUsers());
+        var_dump($this->user->listUsers());
     }
-
-
 ```
 
 Find one or all registers
