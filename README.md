@@ -3,7 +3,7 @@ A complete and beatiful framework for small and medium applications
 
 ### Technologies
 
-* PHP 7.2
+* PHP 8.0
 * TWIG
 * Make using composer components | Compatible with composer components
 
