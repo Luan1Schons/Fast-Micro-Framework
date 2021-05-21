@@ -4,6 +4,8 @@ A complete and beatiful framework for small and medium applications
 ### Technologies
 
 * PHP 8.0
+* POO
+* PDO
 * TWIG
 * Make using composer components | Compatible with composer components
 
